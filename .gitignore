@@ -11,4 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
-#/config/secrets.yml
+/config/application.yml
+# Ignore sensitive application environment variables configuration
+/config/application.yml
+#Ignore all rubymine files
+/.idea
