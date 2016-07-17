@@ -53,4 +53,12 @@ Rails.application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+  # home page for not authenticated users:
+  root to: 'visitors#index'
+
+  # web for authenticated users:
+  devise_for :users
+  resources :users
+
 end

@@ -76,4 +76,10 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+
+  # Devise mailer configuration
+  config.action_mailer.default_url_options = { host: 'http://campaign-challenge.org' }
+
+  # i18n available languages:
+  config.i18n.available_locales = [:es, :en]
 end

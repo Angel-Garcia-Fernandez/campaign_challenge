@@ -16,3 +16,6 @@
 /config/application.yml
 #Ignore all rubymine files
 /.idea
+
+#ignore
+*.ignore
