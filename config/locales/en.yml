@@ -25,8 +25,8 @@ en:
       title: 'Campaign Challenge'
     nav_links_for_auth:
       edit_account: 'Edit account'
-      sign_in: 'Sign out'
-      sign_out: 'Sign in'
+      sign_in: 'Sign in'
+      sign_out: 'Sign out'
       sign_up: 'Sign up'
       users: 'Users'
     navigation:
