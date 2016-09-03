@@ -4,8 +4,15 @@ class AdvertiserReportsController < ApplicationController
   include RequestAdvertiserReportData
 
   def index
-    @hola = self.get_token
+
   end
 
+  def generate_report
+
+  end
+
+  def show
+
+  end
 
 end

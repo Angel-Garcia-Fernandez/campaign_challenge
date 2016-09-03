@@ -2,7 +2,7 @@
 
 module RequestAdvertiserReportData
   def get_token
-    response = HTTP.post('http://staging.platform161.com/api/v2/access_tokens/', form: credentials)
+    token = HTTP.post('https://staging.platform161.com/api/v2/access_tokens', form: credentials)
   end
 
   def credentials
@@ -14,5 +14,14 @@ module RequestAdvertiserReportData
     }
   end
 
+  def get_report
+    token = get_token
+    if token.code == 200
+      HTTP.headers( 'PFM161-AccessToken' => token )
+      response = HTTP.get('https://staging.platform161.com/api/v2/testcost')
+    else
+      token
+    end
+  end
 end
 

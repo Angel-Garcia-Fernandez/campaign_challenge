@@ -61,6 +61,9 @@ Rails.application.routes.draw do
   devise_for :users
   resources :users
 
-  resources :advertiser_reports, only: :index
+  resources :advertiser_reports, only: [ :index, :show ] do
+    get :generate_report, on: :new
+  end
+
 
 end
