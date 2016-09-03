@@ -29,8 +29,10 @@ en:
       sign_out: 'Sign out'
       sign_up: 'Sign up'
       users: 'Users'
+      advertiser_report: 'Advertiser-Report'
+      admin: 'Administration'
     navigation:
-      home: 'Home page'
+      home: 'Challenge'
     navigation_links:
       about: 'About'
   pages:
